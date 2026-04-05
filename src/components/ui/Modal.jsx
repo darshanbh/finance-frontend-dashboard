@@ -103,12 +103,12 @@ export default function Modal() {
 
         {/* ── Header ─────────────────────────────────────────────────────── */}
         <div className="flex items-center justify-between px-6 py-4 border-b" style={{ borderColor: 'var(--border)' }}>
-          <h2 className="font-bold text-base text-white">
+          <h2 className="font-bold text-base" style={{ color: 'var(--text)' }}>
             {editing ? 'Edit Transaction' : 'Add Transaction'}
           </h2>
           <button
             onClick={handleClose}
-            className="w-7 h-7 rounded-lg flex items-center justify-center text-white/40 hover:text-white hover:bg-white/8 transition-colors"
+            className="w-7 h-7 rounded-lg flex items-center justify-center var(--muted) hover:var(--text) hover:bg-white/8 transition-colors"
           >
             <X className="w-4 h-4" />
           </button>
@@ -135,7 +135,7 @@ export default function Modal() {
                       ? t === 'income'
                         ? 'bg-green-500/12 border-green-500/30 text-green-400'
                         : 'bg-red-500/12 border-red-500/30 text-red-400'
-                      : 'border-white/10 text-white/40 hover:text-white hover:border-white/20'
+                      : 'border-white/10 var(--text) hover:var(--text) hover:border-white/20'
                     }
                   `}
                 >
@@ -210,7 +210,7 @@ export default function Modal() {
                     text-xs font-semibold transition-all duration-150
                     ${form.category === key
                       ? 'border-indigo-500/50 bg-indigo-500/12 text-indigo-300'
-                      : 'border-white/8 text-white/40 hover:border-white/20 hover:text-white/70'
+                      : 'border-white/8 var(--muted) hover:border-white/20 hover:var(--text2)'
                     }
                   `}
                   style={form.category === key ? {} : { background: 'var(--surface2)' }}

@@ -233,7 +233,7 @@ export default function Overview() {
                     <span className="w-2 h-2 rounded-full shrink-0" style={{ background: CHART_COLORS[i] }} />
                     <span style={{ color: 'var(--muted)' }}>{cat?.label || c.category}</span>
                   </div>
-                  <span className="font-mono font-semibold style={{ color: 'var(--text)' }}/70">{c.pct}%</span>
+                  <span className="font-mono font-semibold" style={{ color: 'var(--text2)' }}>{c.pct}%</span>
                 </div>
               )
             })}
@@ -259,7 +259,7 @@ export default function Overview() {
         {recent.length === 0 ? (
           <div className="py-16 flex flex-col items-center gap-2 text-center">
             <div className="text-4xl">📭</div>
-            <p className="font-semibold style={{ color: 'var(--text)' }} text-sm">No transactions yet</p>
+            <p className="font-semibold text-sm" style={{ color: 'var(--text)' }}>No transactions yet</p>
             <p className="text-xs" style={{ color: 'var(--muted)' }}>Add one to get started</p>
           </div>
         ) : (
@@ -285,7 +285,7 @@ export default function Overview() {
                       <td className="td">
                         <div className="flex items-center gap-2.5">
                           <span className="text-lg">{cat?.icon}</span>
-                          <span className="font-medium style={{ color: 'var(--text)' }}">{tx.description}</span>
+                          <span className="font-medium" style={{ color: 'var(--text)' }}>{tx.description}</span>
                         </div>
                       </td>
                       <td className="td">

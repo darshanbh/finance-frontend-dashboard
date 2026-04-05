@@ -77,7 +77,7 @@ export default function Sidebar({ open, onClose }) {
               alignItems: 'center', justifyContent: 'center',
               boxShadow: '0 0 12px rgba(99,102,241,0.4)',
             }}>
-              <Zap className="w-4 h-4 text-white" strokeWidth={2.5} />
+              <Zap className="w-4 h-4 style={{ color: 'var(--text)' }}" strokeWidth={2.5} />
             </div>
             <div>
               <div style={{ fontWeight: 700, fontSize: 15, color: 'var(--text)', lineHeight: 1 }}>Zorvyn</div>
