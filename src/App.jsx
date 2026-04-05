@@ -20,7 +20,7 @@ function PageRouter() {
 }
 
 function AppShell() {
-  const [sidebarOpen, setSidebarOpen] = useState(true)  // open by default on desktop
+  const [sidebarOpen, setSidebarOpen] = useState(false)  // open by default on desktop
 
   return (
     <div className="min-h-screen flex" style={{ background: 'var(--bg)', color: 'var(--text)' }}>
